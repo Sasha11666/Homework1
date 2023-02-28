@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top {
+  box-sizing: border-box;
+  width: 100%;
+  height: 1024px;
+  padding-top: 217px;
+  padding-left: 120px;
+  background-image: url(images/bg_upper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+
+.top__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.top__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 44px;
+}
+
+.top__button {
+  box-sizing: border-box;
+  width: 234.06px;
+  height: 48.6px;
+  padding-left: 74.03px;
+  padding-right: 74.03px;
+  padding-top: 13.3px;
+  padding-bottom: 13.3px;
+  background: #9C0332;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.top__button:hover {
+  background: #EB443F;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-color: black;
+}
+
+
+.bottom__pic {
+  box-sizing: border-box;
+  height: 300px;
+  border-radius: 16px;
+  background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(images/game1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 236.36px;
+  padding-bottom: 32px;
+  padding-right: 268px;
+  padding-left: 32px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bottom__pic:hover {
+  border: 3px solid #44D2FF;
+  border-radius: 16px;
+  height: 306px;
+}
+
+.bottom__pic2 {
+  background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(images/game2.jpg);
+}
+
+.bottom__pic3 {
+  background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(images/game3.jpg);
+}
