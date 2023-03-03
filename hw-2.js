@@ -4,7 +4,7 @@ a = 20;
 alert(a);
 
 // task 2
-const firstIphone = 2007;
+const firstIphoneDate = 2007;
 alert(firstIphone);
 
 // task 3
@@ -34,8 +34,8 @@ num += 5;
 num -= 3;
 num *= 7;
 num /= 3;
-num = ++num;
-num = --num;
+++num;
+--num;
 alert(num);
 
 
