@@ -74,6 +74,7 @@ body {
 .bottom__pic {
   box-sizing: border-box;
   height: 300px;
+  width: 378px;
   border-radius: 16px;
   background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(images/game1.jpg);
   background-repeat: no-repeat;
@@ -85,7 +86,7 @@ body {
   line-height: 32px;
   padding-top: 236.36px;
   padding-bottom: 32px;
-  padding-right: 268px;
+  padding-right: 262px;
   padding-left: 32px;
   cursor: pointer;
   transition: all 0.3s;
@@ -103,4 +104,48 @@ body {
 
 .bottom__pic3 {
   background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(images/game3.jpg);
+}
+
+@media(max-width: 1170px) {
+  .bottom {
+    flex-wrap: wrap;
+  }
+  .bottom__pic {
+    width: 343px;
+    
+  }
+}
+
+@media(max-width: 965px) {
+  .bottom__pic {
+    padding-right: 248px;
+    padding-left: 16px;
+
+  }
+}
+
+@media(max-width: 660px) {
+  .top {
+    padding-left: 16px;
+    padding-right: 16px;
+    background-image: url(images/bg_mobile.jpg);
+  }
+  .top__title{
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .top__text{
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .top__button{
+    margin-left: calc((100% - 234.06px)/2);
+  }
+
+  .bottom__pic {
+    font-size: 20px;
+  }
+
 }
