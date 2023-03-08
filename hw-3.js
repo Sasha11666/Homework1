@@ -37,6 +37,7 @@ let monthNumber = Number(prompt('Введите номер месяца'));
 switch(monthNumber) {
   case 1:
   case 2:
+  case 12:
     alert('зима');
     break;
   case 3:
@@ -53,9 +54,6 @@ switch(monthNumber) {
   case 10:
   case 11:
     alert('осень');
-    break;
-  case 12:
-    alert('зима');
     break;
   default:
     alert('У нас 12 месяцев :)');
