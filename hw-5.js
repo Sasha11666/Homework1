@@ -1,12 +1,4 @@
-const minNumber = (a, b) => {
-  if(a < b) {
-    return a;
-  }else if(b < a) {
-    return b;
-  }else if(a === b) {
-    return a;
-  }
-};
+const comparison = (a, b) => a <= b ? a : b;;
 
 // task 2
 const oddEven = (number) => {
