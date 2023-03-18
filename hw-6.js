@@ -1,11 +1,11 @@
 //task 1
 let arr = [1, 5, 4, 10, 0, 3];
 for(i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
   if(arr[i] == 10) {
-    console.log(arr[i]);
     break
   }
-  console.log(arr[i]);
+  
 };
 
 // task 2
@@ -16,21 +16,19 @@ console.log([1, 3, 5, 10, 20].join(' '));
 
 //task 4
 let arrs = [];
-let nums = new Array();
-for (i = 0; i < 3; i++) {
-  nums.push(1);
-}
-for ( i = 0; i < 3; i++) {
-  arrs.push(nums);
-}
-console.log(nums);
+for (let i = 0; i < 3; i++) {
+  arrs.push([]);
+  for (let j = 0; j < 3; j++) {
+    arrs[i].push(1);
+  }
+};
 console.log(arrs);
 
 // task 5
 let ones = [1, 1, 1];
-for(i = 0; i < 3; i++) {
-  ones.push(2);
-};
+ones.push(2, 2, 2);
+console.log(ones);
+
 
 // task 6
 let sorted = [9, 8, 7, 'a', 6, 5].sort();
@@ -59,12 +57,16 @@ for(let arr of double){
     single.push(el)
   }
 };
-
 console.log(single);
+
+// another way
+let nested = [[1, 2, 3,],[4, 5, 6]];
+let flat = nested.flat(Infinity);
+console.log(flat);
 
 // task 10
 let mine = [5, 8, 2, 9, 4];
-for(i = 0; i < 5; i++) {
+for(i = 0; i < mine.length - 1; i++) {
   if(i < 4) {
     console.log(mine[i] + mine[i + 1])
   }else {
@@ -114,9 +116,12 @@ console.log(second);
 
 // task 15
 let last  = [];
+const getNum = () => {
+  return Math.floor(Math.random() * 10) + 1;
+};
 
 for(i = 0; i < 6; i++) {
-  last.push(getRandomNum())
+  last.push(getNum())
 };
 
 let average = last.reduce((a, b) => (a + b)) / last.length;
