@@ -31,3 +31,19 @@ const guessSeason = () => {
   return season;
   
 }
+
+const memorizeWord = () => {
+  let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+  fruits = fruits.sort(() => Math.random() - 0.5);
+  alert(fruits);
+
+  let guessFirst = prompt('Чему равнялся первый элемент массива?');
+  let guessLast = prompt('Чему равнялся последний элемент массива?');
+  if(guessFirst.toLowerCase() == fruits[0].toLowerCase() && guessLast.toLowerCase() == fruits[6].toLowerCase()) {
+    alert('Ты победил!')
+  } else if(guessFirst.toLowerCase() == fruits[0].toLowerCase() || guessLast.toLowerCase() == fruits[6].toLowerCase()){
+    alert('Ты был близок к победе!')
+  } else {
+    alert('Будь внимательнее!')
+  }
+}
