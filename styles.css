@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color:  #000915;
 }
 
 .top {
@@ -76,7 +77,7 @@ body {
   height: 300px;
   width: 378px;
   border: 3px solid #000915;
-  border-radius: 16px;
+  border-radius: 20px;
   background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(images/game1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,7 +108,7 @@ body {
   background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(images/game3.jpg);
 }
 
-.first {
+.game {
   box-sizing: border-box;
   background-color:#000915;
   color: #FFFFFF;
@@ -115,34 +116,34 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 282px;
-  padding-bottom: 282px;
+  padding-bottom: 0px;
   padding-left: 115px;
   padding-right: 115px;
-  column-gap: 135px;
+  column-gap: 200px;
   row-gap: 100px;
   
 }
 
-.first_board {
+.game__box {
   display: flex;
   flex-direction: column;
   gap: 32px;
   width: 500px;
 }
 
-.first_title {
+.game__title {
   font-weight: 700;
   font-size: 48px;
   line-height: 59px;
 }
 
-.first_text {
+.game__text {
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
 }
 
-.first_button {
+.game__button {
   width: 234.06px;
   height: 48.6px;
   background: #9C0332;
@@ -154,7 +155,7 @@ body {
   cursor: pointer;
 }
 
-.first_button:hover {
+.game__button:hover {
   background: #EB443F;
 }
 
@@ -166,27 +167,39 @@ body {
   background-repeat: no-repeat;
 }
 
+.second_image {
+  background-image: url(images/second-game.png);
+  width: 485px;
+  height: 333px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-@media(max-width: 1350px) {
 
-  .first {
+@media(max-width: 1550px) {
+  .bottom {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .game {
     padding-left: 100px;
     padding-right: 100px;
   
 
   }
-  .first_board {
+  .game__box {
     width: 400px;
   }
   .first_image {
     background-size: contain;
-    background-image: url(images/first-mobile.png);
+    
 
   }
 }
 
 @media(max-width: 1240px) {
-  .first {
+  .game {
     padding-left: 80px;
     padding-right: 80px;
     gap: 100px;
@@ -207,7 +220,7 @@ body {
   .bottom__pic {
     width: 343px;
   }
-  .first {
+  .game {
     padding-top: 200px;
     padding-bottom: 200px;
     padding-left: 80px;
@@ -224,10 +237,10 @@ body {
     padding-right: 248px;
     padding-left: 16px;
   }
-  .first {
+  .game {
     justify-content: center;
   }
-  .first_board {
+  .game__box {
     text-align: center;
     align-items: center;
   }
@@ -261,22 +274,29 @@ body {
   .first_image {
     width: 344px;
     height: 236px;
+    background-image: url(images/first-mobile.png);
+  }
+
+  .second_image {
+    width: 344px;
+    height: 236px;
+    background-image: url(images/second-mobile.png);
   }
 }
 
 @media(max-width:560px) {
-  .first {
+  .game {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 178px;
     row-gap: 64px;
   }
-  .first_title {
+  .game__title {
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
   }
-  .first_text {
+  .game__text {
     font-weight: 300;
     font-size: 14px;
     line-height: 22px;
