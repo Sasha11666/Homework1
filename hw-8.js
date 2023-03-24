@@ -46,7 +46,7 @@ const reversArr = (arr) => {
 }
 
 const toNumberArr = (arr) => {
-  return(arr.filter(el => !isNaN(+el)).map(el => +el));
+  return arr.filter(el => !isNaN(+el)).map(el => +el);
 
 }
 
